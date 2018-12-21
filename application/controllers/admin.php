@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
             $this->load->view('admin/customerEdit', $data);
         } else {
             $this->themodel->insert();
-            $this->load->view('admin/customer');
+            $this->customer();
         }
     }
 	public function company() {
