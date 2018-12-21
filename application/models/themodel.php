@@ -33,7 +33,6 @@ class themodel extends CI_Model
 
     public function get_where($id) {
         $a = $this->db->get_where('customer', array('Id', $id))->row_array();
-        var_dump($a);
         return $a;
     }
 

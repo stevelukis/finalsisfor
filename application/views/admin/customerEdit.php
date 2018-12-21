@@ -188,7 +188,7 @@
                         </div>
                         <div class="body">
                             <?php echo form_open('admin/customerEdit');?>
-                            <input name="id" value="<?php echo $result['id']?>" hidden>
+                            <input name="id" value="<?php echo $result['Id']?>" hidden>
                                 <label for="nama">Nama</label>
                                 <div class="form-group">
                                     <div class="form-line">
@@ -235,7 +235,7 @@
                                 <div class="form-group">
                                     <div class="form-line">
                                         <input name="organ" type="text" id="organ" class="form-control" placeholder="Instansi"
-                                               value="<?php echo $result['organ'] ?>">
+                                               value="<?php echo $result['organization'] ?>">
                                     </div>
                                 </div>
                                 <br>
