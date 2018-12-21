@@ -218,14 +218,12 @@
                                     echo "<td>" . $row['organization'] . "</td>";
                                     echo "
                                         <td>
-                                        	<button type=\"button\" class=\"btn btn-success waves-effect\"
-			                                onclick=\"()=>{location.href='http://localhost/admin/edit/'".$row['Id']."\}(); return false;\">
+                                        	<a href='http://localhost/finalsisfor/admin/edit/". $row['Id'] ."' type=\"button\" class=\"btn btn-success waves-effect\">
 			                                    <i class=\"material-icons\">home</i>
-			                                </button>
-			                                <button type=\"button\" class=\"btn btn-danger waves-effect\"
-			                                onclick=\"()=>{location.href='http://localhost/admin/delete/'".$row['Id']."\}(); return false;\">
+			                                </a>
+			                                <a href='http://localhost/finalsisfor/admmin/delete/". $row['Id'] ."' type=\"button\" class=\"btn btn-danger waves-effect\">
 			                                    <i class=\"material-icons\">flight_takeoff</i>
-			                                </button>
+			                                </a>
                                         </td>";
                                     echo "</tr>";
                                 }
