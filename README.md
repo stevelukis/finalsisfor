@@ -12,3 +12,5 @@ Memperbaiki lokasi style dan script yang tidak ditemukan (missing)
 Memperbaiki loading terus menerus
 
 CRUD
+
+Implementasi API
