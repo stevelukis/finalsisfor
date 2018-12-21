@@ -20,7 +20,9 @@ class Admin extends CI_Controller {
 		redirect(base_url("index.php/admin/index"));
 	}
 	public function customer() {
-		$this->load->view('admin/customer');
+		$result = $this->themodel->get();
+		$data['result'] = $result;
+        $this->load->view('admin/customer', $data);
 	}
 	public function customerTambah()
     {
@@ -35,7 +37,6 @@ class Admin extends CI_Controller {
             $this->themodel->insert();
             $this->load->view('admin/customer');
         }
-
 	}
 	public function company() {
 		$this->load->view('admin/company');

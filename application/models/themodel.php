@@ -26,4 +26,8 @@ class themodel extends CI_Model
 
         return $this->db->insert('customer', $data);
     }
+
+    public function get() {
+        return $this->db->get('customer')->result_array();
+    }
 }

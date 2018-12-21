@@ -215,7 +215,7 @@
                                 <label for="tlahir">Tanggal lahir</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input name="tlahir" type="text" id="tlahir" class="form-control" placeholder="Masukkan tanggal lahir">
+                                        <input name="tlahir" type="text" id="tlahir" class="form-control" placeholder="yyyy/MM/dd">
                                     </div>
                                 </div>
                                 <label for="job">Pekerjaan</label>

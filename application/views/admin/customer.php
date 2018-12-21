@@ -194,52 +194,40 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>FIRST NAME</th>
-                                        <th>LAST NAME</th>
-                                        <th>USERNAME</th>
-                                        <th>ACTION</th>
+                                        <th>Id</th>
+                                        <th>Nama</th>
+                                        <th>Email</th>
+                                        <th>Telepon</th>
+                                        <th>Instagram</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Pekerjaan</th>
+                                        <th>Instansi/Universitas</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                <?php
+                                foreach ($result as $row) {
+                                    echo "<tr>";
+                                    echo "<td>" . $row['Id'] . "</td>";
+                                    echo "<td>" . $row['name'] . "</td>";
+                                    echo "<td>" . $row['email'] . "</td>";
+                                    echo "<td>" . $row['no_telp'] . "</td>";
+                                    echo "<td>" . $row['instagram'] . "</td>";
+                                    echo "<td>" . $row['tanggal_lahir'] . "</td>";
+                                    echo "<td>" . $row['pekerjaan'] . "</td>";
+                                    echo "<td>" . $row['organization'] . "</td>";
+                                    echo "
                                         <td>
-                                        	<button type="button" class="btn btn-success waves-effect">
-			                                    <i class="material-icons">home</i>
+                                        	<button type=\"button\" class=\"btn btn-success waves-effect\">
+			                                    <i class=\"material-icons\">home</i>
 			                                </button>
-			                                <button type="button" class="btn btn-danger waves-effect">
-			                                    <i class="material-icons">flight_takeoff</i>
+			                                <button type=\"button\" class=\"btn btn-danger waves-effect\">
+			                                    <i class=\"material-icons\">flight_takeoff</i>
 			                                </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Larry</td>
-                                        <td>Jellybean</td>
-                                        <td>@lajelly</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Larry</td>
-                                        <td>Kikat</td>
-                                        <td>@lakitkat</td>
-                                    </tr>
+                                        </td>";
+                                    echo "</tr>";
+                                }
+                                ?>
                                 </tbody>
                             </table>
                         </div>
