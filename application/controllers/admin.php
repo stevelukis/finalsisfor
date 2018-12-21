@@ -21,7 +21,7 @@ class Admin extends CI_Controller {
 	}
 	public function customer() {
 		$result = $this->themodel->get();
-		$data['result'] = $result;
+        $data['result'] = $result;
         $this->load->view('admin/customer', $data);
 	}
 	public function customerTambah()
@@ -38,6 +38,24 @@ class Admin extends CI_Controller {
             $this->load->view('admin/customer');
         }
 	}
+	public function delete($id) {
+        $this->themodel->delete($id);
+        $this->customer();
+    }
+    public function edit($id) {
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('nama', 'Nama', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $data['result'] = $this->themodel->get_where($id);
+            $this->load->view('admin/customerEdit', $data);
+        } else {
+            $this->themodel->insert();
+            $this->load->view('admin/customer');
+        }
+    }
 	public function company() {
 		$this->load->view('admin/company');
 	}

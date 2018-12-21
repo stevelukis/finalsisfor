@@ -227,7 +227,7 @@
                                 <label for="organ">Instansi/Universitas</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input name="organ" type="text" id="organ" class="form-control" placeholder="Enter your email address">
+                                        <input name="organ" type="text" id="organ" class="form-control" placeholder="Masukkan instansi">
                                     </div>
                                 </div>
                                 <br>

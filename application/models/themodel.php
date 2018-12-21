@@ -30,4 +30,14 @@ class themodel extends CI_Model
     public function get() {
         return $this->db->get('customer')->result_array();
     }
+
+    public function get_where($id) {
+        $a = $this->db->get_where('customer', array('Id', $id))->row_array();
+        var_dump($a);
+        return $a;
+    }
+
+    public function delete($id) {
+        return $this->db->delete('customer', array('Id' => $id));
+    }
 }

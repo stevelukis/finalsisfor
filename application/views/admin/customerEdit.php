@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Welcome To | Bootstrap Based Admin Template - Material Design</title>
+    <title>Hello | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -96,12 +96,6 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
-                            <li role="separator" class="divider"></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
@@ -168,16 +162,16 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>NORMAL TABLES</h2>
+                <h2>FORM EXAMPLES</h2>
             </div>
-            <!-- Basic Table -->
+
+            <!-- Vertical Layout -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
                             <h2>
-                                BASIC TABLES
-                                <small>Basic example without any additional modification classes</small>
+                                VERTICAL LAYOUT
                             </h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
@@ -185,81 +179,105 @@
                                         <i class="material-icons">more_vert</i>
                                     </a>
                                     <ul class="dropdown-menu pull-right">
-                                        <li><a href="<?php echo site_url() ?>admin/customerTambah">Tambah Data</a></li>
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
-                        <div class="body table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Nama</th>
-                                        <th>Email</th>
-                                        <th>Telepon</th>
-                                        <th>Instagram</th>
-                                        <th>Tanggal Lahir</th>
-                                        <th>Pekerjaan</th>
-                                        <th>Instansi/Universitas</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                <?php
-                                foreach ($result as $row) {
-                                    echo "<tr>";
-                                    echo "<td>" . $row['Id'] . "</td>";
-                                    echo "<td>" . $row['name'] . "</td>";
-                                    echo "<td>" . $row['email'] . "</td>";
-                                    echo "<td>" . $row['no_telp'] . "</td>";
-                                    echo "<td>" . $row['instagram'] . "</td>";
-                                    echo "<td>" . $row['tanggal_lahir'] . "</td>";
-                                    echo "<td>" . $row['pekerjaan'] . "</td>";
-                                    echo "<td>" . $row['organization'] . "</td>";
-                                    echo "
-                                        <td>
-                                        	<button type=\"button\" class=\"btn btn-success waves-effect\"
-			                                onclick=\"()=>{location.href='http://localhost/admin/edit/'".$row['Id']."\}(); return false;\">
-			                                    <i class=\"material-icons\">home</i>
-			                                </button>
-			                                <button type=\"button\" class=\"btn btn-danger waves-effect\"
-			                                onclick=\"()=>{location.href='http://localhost/admin/delete/'".$row['Id']."\}(); return false;\">
-			                                    <i class=\"material-icons\">flight_takeoff</i>
-			                                </button>
-                                        </td>";
-                                    echo "</tr>";
-                                }
-                                ?>
-                                </tbody>
-                            </table>
+                        <div class="body">
+                            <?php echo form_open('admin/customerEdit');?>
+                            <input name="id" value="<?php echo $result['id']?>" hidden>
+                                <label for="nama">Nama</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="nama" type="text" id="nama" class="form-control" placeholder="Masukkan nama"
+                                        value="<?php echo $result['name'] ?>">
+                                    </div>
+                                </div>
+                                <label for="email">Email</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="email" type="text" id="email" class="form-control" placeholder="Masukkan alamat email"
+                                               value="<?php echo $result['email'] ?>">
+                                    </div>
+                                </div>
+                                <label for="telp">Nomor Telepon</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="telp" type="text" id="telp" class="form-control" placeholder="Masukkan nomor telepon"
+                                               value="<?php echo $result['no_telp'] ?>">
+                                    </div>
+                                </div>
+                                <label for="insta">Instagram</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="insta" type="text" id="insta" class="form-control" placeholder="Masukkan username Instagram"
+                                               value="<?php echo $result['instagram'] ?>">
+                                    </div>
+                                </div>
+                                <label for="tlahir">Tanggal lahir</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="tlahir" type="text" id="tlahir" class="form-control" placeholder="yyyy/MM/dd"
+                                               value="<?php echo $result['tanggal_lahir'] ?>">
+                                    </div>
+                                </div>
+                                <label for="job">Pekerjaan</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="job" type="text" id="job" class="form-control" placeholder="Masukkan pekerjaan"
+                                               value="<?php echo $result['pekerjaan'] ?>">
+                                    </div>
+                                </div>
+                                <label for="organ">Instansi/Universitas</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="organ" type="text" id="organ" class="form-control" placeholder="Instansi"
+                                               value="<?php echo $result['organ'] ?>">
+                                    </div>
+                                </div>
+                                <br>
+                                <input type="submit" class="btn btn-primary m-t-15 waves-effect" style="display: block"/>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# Basic Table -->
+            <!-- #END# Vertical Layout -->
         </div>
     </section>
 
     <!-- Jquery Core Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="<?php echo base_url() ?>/assets/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url() ?>/assets/plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/js/bootstrap-select.js"></script>
+    <script src="<?php echo base_url() ?>/assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="<?php echo base_url() ?>assets/js/jquery.slimscroll.js"></script>
+    <script src="<?php echo base_url() ?>/assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.js"></script>
+    <script src="<?php echo base_url() ?>/assets/plugins/node-waves/waves.js"></script>
+
+    <!-- Autosize Plugin Js -->
+    <script src="<?php echo base_url() ?>/assets/plugins/autosize/autosize.js"></script>
+
+    <!-- Moment Plugin Js -->
+    <script src="<?php echo base_url() ?>/assets/plugins/momentjs/moment.js"></script>
+
+    <!-- Bootstrap Material Datetime Picker Plugin Js -->
+    <script src="<?php echo base_url() ?>/assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 
     <!-- Custom Js -->
-    <script src="<?php echo base_url() ?>assets/js/admin.js"></script>
+    <script src="<?php echo base_url() ?>/assets/js/admin.js"></script>
+    <script src="<?php echo base_url() ?>/assets/js/pages/forms/basic-form-elements.js"></script>
 
     <!-- Demo Js -->
-    <script src="<?php echo base_url() ?>assets/js/demo.js"></script>
+    <script src="<?php echo base_url() ?>/assets/js/demo.js"></script>
 </body>
-
 </html>
