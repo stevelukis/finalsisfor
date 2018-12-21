@@ -187,21 +187,51 @@
                             </ul>
                         </div>
                         <div class="body">
-                            <form>
-                                <label for="email_address">Email Address</label>
+                            <?php echo form_open('admin/customerTambah'); ?>
+                                <label for="nama">Nama</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+                                        <input name="nama" type="text" id="nama" class="form-control" placeholder="Masukkan nama">
                                     </div>
                                 </div>
-                                <label for="password">Username</label>
+                                <label for="email">Email</label>
                                 <div class="form-group">
                                     <div class="form-line">
-                                        <input type="text" id="email_address" class="form-control" placeholder="Enter your email address">
+                                        <input name="email" type="text" id="email" class="form-control" placeholder="Masukkan alamat email">
+                                    </div>
+                                </div>
+                                <label for="telp">Nomor Telepon</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="telp" type="text" id="telp" class="form-control" placeholder="Masukkan nomor telepon">
+                                    </div>
+                                </div>
+                                <label for="insta">Instagram</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="insta" type="text" id="insta" class="form-control" placeholder="Masukkan username Instagram">
+                                    </div>
+                                </div>
+                                <label for="tlahir">Tanggal lahir</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="tlahir" type="text" id="tlahir" class="form-control" placeholder="Masukkan tanggal lahir">
+                                    </div>
+                                </div>
+                                <label for="job">Pekerjaan</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="job" type="text" id="job" class="form-control" placeholder="Masukkan pekerjaan">
+                                    </div>
+                                </div>
+                                <label for="organ">Instansi/Universitas</label>
+                                <div class="form-group">
+                                    <div class="form-line">
+                                        <input name="organ" type="text" id="organ" class="form-control" placeholder="Enter your email address">
                                     </div>
                                 </div>
                                 <br>
-                                <button type="button" class="btn btn-primary m-t-15 waves-effect">LOGIN</button>
+                                <input type="submit" class="btn btn-primary m-t-15 waves-effect" style="display: block"/>
                             </form>
                         </div>
                     </div>
