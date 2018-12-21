@@ -185,7 +185,7 @@
                                         <i class="material-icons">more_vert</i>
                                     </a>
                                     <ul class="dropdown-menu pull-right">
-                                        <li><a href="<?php echo site_url() ?>/admin/companyTambah">Tambah Data</a></li>
+                                        <li><a href="<?php echo site_url() ?>admin/customerTambah">Tambah Data</a></li>
                                     </ul>
                                 </li>
                             </ul>
