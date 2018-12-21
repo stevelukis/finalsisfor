@@ -3,4 +3,7 @@
 
 "index.php" dihapus
 
-Memperbaiki lokasi style dan script
+Mengganti [::1] menjadi localhost
+
+Memperbaiki lokasi style dan script yang tidak ditemukan (missing)
+

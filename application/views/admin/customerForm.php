@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Waves Effect Css -->
-    <link href="/node-waves/waves.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="/animate-css/animate.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="/morrisjs/morris.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
