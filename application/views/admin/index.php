@@ -14,16 +14,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Waves Effect Css -->
-    <link href="/node-waves/waves.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
     <link href="/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Morris Chart Css-->
-    <link href="/morrisjs/morris.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="<?php echo base_url() ?>assets/css/style.css" rel="stylesheet">
@@ -478,39 +478,39 @@
     </section>
 
     <!-- Jquery Core Js -->
-    <script src="/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.5/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="/node-waves/waves.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.js"></script>
 
     <!-- Jquery CountTo Plugin Js -->
-    <script src="/jquery-countto/jquery.countTo.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
 
     <!-- Morris Plugin Js -->
-    <script src="/raphael/raphael.min.js"></script>
-    <script src="/morrisjs/morris.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.js"></script>
 
     <!-- ChartJs -->
-    <script src="/chartjs/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
 
     <!-- Flot Charts Plugin Js -->
-    <script src="/flot-charts/jquery.flot.js"></script>
-    <script src="/flot-charts/jquery.flot.resize.js"></script>
-    <script src="/flot-charts/jquery.flot.pie.js"></script>
-    <script src="/flot-charts/jquery.flot.categories.js"></script>
-    <script src="/flot-charts/jquery.flot.time.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/flot-charts/jquery.flot.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/flot-charts/jquery.flot.resize.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/flot-charts/jquery.flot.pie.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/flot-charts/jquery.flot.categories.js"></script>
+    <script src="<?php echo base_url() ?>assets/js/flot-charts/jquery.flot.time.js"></script>
 
     <!-- Sparkline Chart Plugin Js -->
-    <script src="/jquery-sparkline/jquery.sparkline.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.js"></script>
 
     <!-- Custom Js -->
     <script src="<?php echo base_url() ?>assets/js/admin.js"></script>
