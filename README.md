@@ -1,6 +1,8 @@
 # finalsisfor
 #
 
+STEVE LUKIS - D42116006
+
 "index.php" dihapus
 
 Mengganti [::1] menjadi localhost
